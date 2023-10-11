@@ -50,7 +50,7 @@ namespace assignment1
             string port = "Port=5432;";
             string dbName = "Database=farmers_market;";
             string userName = "Username=postgres;";
-            string password = "Password=133080;";
+            string password = "Password=1234;";
 
             string connectionString = string.Format("{0}{1}{2}{3}{4}", host, port, dbName, userName, password);
             return connectionString;

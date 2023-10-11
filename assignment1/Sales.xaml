@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:assignment1"
         mc:Ignorable="d"    
-        Title="Sales" Height="450" Width="800">
+        Title="Sales" Height="500" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="7*"/>
@@ -31,16 +31,13 @@
         <TextBox x:Name="blueberry_amount" HorizontalAlignment="Left" Height="22" Margin="428,193,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="76"/>
         <TextBox x:Name="cauliflower_amount" HorizontalAlignment="Left" Height="22" Margin="428,240,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="76"/>
         <Label Content="Subtotal" HorizontalAlignment="Left" Height="28" Margin="617,22,0,0" Grid.Row="1" VerticalAlignment="Top" Width="81" FontWeight="Bold"/>
-        <TextBlock x:Name="apple_subtotal" HorizontalAlignment="Left" Height="22" Margin="617,55,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" Background="#FFF7F3F3" />
-        <TextBlock x:Name="orange_subtotal" HorizontalAlignment="Left" Height="22" Margin="617,101,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" Background="#FFF7F3F3"/>
-        <TextBlock x:Name="raspberry_subtotal" HorizontalAlignment="Left" Height="22" Margin="617,146,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" Background="#FFF7F3F3"/>
-        <TextBlock x:Name="blueberry_subtotal" HorizontalAlignment="Left" Height="22" Margin="617,193,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" Background="#FFF7F3F3"/>
-        <TextBlock x:Name="cauliflower_subtotal" HorizontalAlignment="Left" Height="22" Margin="617,238,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" Background="#FFF7F3F3"/>
-        <ComboBox x:Name="other_product" HorizontalAlignment="Left" Margin="128,290,0,0" Grid.Row="1" VerticalAlignment="Top" Width="91"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="428,290,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="76"/>
-        <TextBlock x:Name="other_subtotal" HorizontalAlignment="Left" Height="22" Margin="617,288,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" Background="#FFF7F3F3"/>
-        <TextBlock x:Name="other_p_price" HorizontalAlignment="Left" Height="22" Margin="259,290,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" Background="#FFF7F3F3"/>
-        <Button x:Name="purchase" Content="Purchase" HorizontalAlignment="Left" Height="29" Margin="610,339,0,0" Grid.Row="1" VerticalAlignment="Top" Width="103"/>
-
+        <TextBlock x:Name="apple_subtotal" HorizontalAlignment="Left" Height="22" Margin="617,55,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Background="#FFF7F3F3" />
+        <TextBlock x:Name="orange_subtotal" HorizontalAlignment="Left" Height="22" Margin="617,101,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Background="#FFF7F3F3"/>
+        <TextBlock x:Name="raspberry_subtotal" HorizontalAlignment="Left" Height="22" Margin="617,146,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Background="#FFF7F3F3"/>
+        <TextBlock x:Name="blueberry_subtotal" HorizontalAlignment="Left" Height="22" Margin="617,193,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Background="#FFF7F3F3"/>
+        <TextBlock x:Name="cauliflower_subtotal" HorizontalAlignment="Left" Height="22" Margin="617,238,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Background="#FFF7F3F3"/>
+        <TextBlock x:Name="total_subtotal" HorizontalAlignment="Left" Height="46" Margin="617,277,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Background="#FFF7F3F3"/>
+        <Button x:Name="purchase" Content="Purchase" HorizontalAlignment="Left" Height="29" Margin="614,346,0,0" Grid.Row="1" VerticalAlignment="Top" Width="102"/>
+        <Label Content="Total Price" HorizontalAlignment="Left" Margin="520,287,0,0" Grid.Row="1" VerticalAlignment="Top" FontWeight="Bold"/>
     </Grid>
 </Window>
