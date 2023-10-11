@@ -42,8 +42,14 @@ namespace assignment1
 
         private void ProductAmount_TextChanged(object sender, EventArgs e)
         {
-            if (sender is TextBox textBox)
+            totalSubtotal = 0.0; // Reset the total subtotal
+
+            foreach (TextBox textBox in new List<TextBox>
             {
+                apple_amount, orange_amount, raspberry_amount, blueberry_amount, cauliflower_amount
+            })
+            {
+
                 double price = 0;
                 TextBlock targetTextBlock = null;
               
@@ -75,16 +81,17 @@ namespace assignment1
                 {
                     targetTextBlock.Text = (amount * price).ToString("F2");
 
-                    //update the total subtotal
-                    double subtotal = price * amount;
-                    totalSubtotal += subtotal;
-                    total_subtotal.Text = $"Total Subtotal: ${totalSubtotal:F2}";
+                    // Update the total subtotal
+                    totalSubtotal += (amount * price);
                 }
                 else
                 {
                     targetTextBlock.Text = "0.00";
                 }
             }
+
+            // Update the total_subtotal TextBlock
+            total_subtotal.Text = $"Total Subtotal: ${totalSubtotal:F2}";
         }
 
         private void Purchase_Click(object sender, RoutedEventArgs e)
