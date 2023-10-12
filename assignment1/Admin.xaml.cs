@@ -35,7 +35,7 @@ namespace assignment1
         {
             try
             {
-                con = new NpgsqlConnection(get_ConnectionString());
+                con = new NpgsqlConnection(DatabaseConfig.GetConnectionString());
                 MessageBox.Show("Connection Established");
             }
             catch (NpgsqlException ex)
@@ -44,7 +44,7 @@ namespace assignment1
             }
         }
 
-        public string get_ConnectionString()
+       /* public string get_ConnectionString()
         {
             string host = "Host=localhost;";
             string port = "Port=5432;";
@@ -55,7 +55,7 @@ namespace assignment1
             string connectionString = string.Format("{0}{1}{2}{3}{4}", host, port, dbName, userName, password);
             return connectionString;
 
-        }
+        }*/
 
         private void showAll_Click(object sender, RoutedEventArgs e)
         {

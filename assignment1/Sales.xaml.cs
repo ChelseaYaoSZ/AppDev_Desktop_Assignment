@@ -149,6 +149,7 @@ namespace assignment1
                         }
                     }
 
+                    MessageBox.Show("Inventory updated successfully!");
                     con.Close();
                 }
             }
