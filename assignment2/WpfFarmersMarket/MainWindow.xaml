@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfFarmersMarket.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFarmersMarket"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <RadioButton x:Name="admin_button" Content="Admin" HorizontalAlignment="Left" Height="31" Margin="227,65,0,0" VerticalAlignment="Top" Width="145" FontWeight="Bold" FontSize="18"/>
+        <RadioButton x:Name="sales_button" Content="Sales" HorizontalAlignment="Left" Height="31" Margin="227,124,0,0" VerticalAlignment="Top" Width="145" FontWeight="Bold" FontSize="18"/>
+        <Button x:Name="select" Content="Select" HorizontalAlignment="Left" Height="33" Margin="227,184,0,0" VerticalAlignment="Top" Width="122" Click="select_Click"/>
+    </Grid>
+</Window>

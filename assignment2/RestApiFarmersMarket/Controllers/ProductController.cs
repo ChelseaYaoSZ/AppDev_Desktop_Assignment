@@ -48,6 +48,20 @@ namespace RestApiFarmersMarket.Controllers
             return response;
         }
 
+        //Search 1 product by Name
+        [HttpGet]
+        [Route("GetProductByName/{name}")]
+
+        public Response GetProductByName(string name)
+        {
+            Response response = new Response();
+            NpgsqlConnection con =
+                new NpgsqlConnection(_configuration.GetConnectionString("productConnection"));
+            DBApplication dBA = new DBApplication();
+            response = dBA.GetProductByName(con, name);
+            return response;
+        }
+
         //insert a new product
         [HttpPost]
         [Route("AddProduct")]
