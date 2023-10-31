@@ -14,8 +14,5 @@
 
         public double price { get; set; }
 
-       
-
-
     }
 }
