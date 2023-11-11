@@ -1,0 +1,21 @@
+﻿<Window x:Class="Assign3_UnitTesting.BankCharges"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assign3_UnitTesting"
+        mc:Ignorable="d"
+        Title="BankCharges" Height="450" Width="800">
+    <Grid Background="#FF9395B6">
+            <Label Content="Ending Balance" HorizontalAlignment="Left" Margin="211,183,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+            <TextBox x:Name="endingBalance" HorizontalAlignment="Left" Margin="400,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18"/>
+            <Label Content="Number of Cheques" HorizontalAlignment="Left" Margin="211,234,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+            <TextBox x:Name="noOfCheques" HorizontalAlignment="Left" Margin="400,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18"/>
+            <Button x:Name="calcMonthlyServFee" Content="Calculate Monthly Service Fee" HorizontalAlignment="Left" Margin="211,305,0,0" VerticalAlignment="Top" Height="46" Width="309" FontSize="20" Click="calcMonthlyServFee_Click" Foreground="White" Background="#FF696A77" FontWeight="Bold"/>
+            <Label Content="Bank Charges" HorizontalAlignment="Left" Margin="26,38,0,0" VerticalAlignment="Top" FontSize="48" FontWeight="Bold" Foreground="White">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+        </Grid>
+</Window>
